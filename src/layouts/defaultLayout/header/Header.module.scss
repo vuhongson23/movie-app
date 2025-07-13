@@ -1,0 +1,75 @@
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  height: 138px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 94px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Button Log out, Log in
+.action {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.sign-up-btn {
+  width: 150px;
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  font-weight: 400;
+}
+
+.sign-in-btn {
+  width: 150px;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+// Search
+.search {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-left: 20px;
+  border-radius: 8px;
+  background: #222222;
+  padding: 3px 9px;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding-right: 9px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+// Nav Bar
+.nav {
+  margin-left: 15px;
+}

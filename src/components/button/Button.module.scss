@@ -1,0 +1,53 @@
+.btn {
+  border-radius: 8px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+
+  // Type
+  &.primary {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+
+    &:hover {
+      background-color: #c91e3d;
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+      box-shadow: 0 0 5px 2px #c91e3d;
+    }
+  }
+
+  &.text {
+    color: white;
+    padding-right: 25px;
+  }
+}
+
+// Size
+.large {
+  width: 150px;
+  padding: 7px 0;
+  font-size: 18px;
+}
+.medium {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.small {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.title + .icon,
+.icon + .title {
+  margin-left: 10px;
+}
