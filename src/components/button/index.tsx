@@ -12,6 +12,7 @@ type ButtonProps = {
   type?: "primary" | "outlined" | "text";
   size?: "small" | "medium" | "large";
   className?: string;
+  fullWidth?: boolean;
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLElement> | undefined;
@@ -25,6 +26,7 @@ const Button = ({
   type = "primary",
   size = "large",
   className,
+  fullWidth,
   iconLeft,
   iconRight,
   onClick,
@@ -48,6 +50,7 @@ const Button = ({
     [className || ""]: !!className,
     [type]: type,
     [size]: size,
+    fullWidth,
     disabled,
   });
 

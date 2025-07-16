@@ -1,0 +1,14 @@
+.wrapper {
+  margin-top: 50px;
+
+  h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+}

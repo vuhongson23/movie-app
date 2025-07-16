@@ -2,7 +2,8 @@ import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import Button from "~/components/button";
 import routes from "~/config/routes";
-import { DownArrowIcon, GlassIcon } from "~/components/icon";
+import { DownArrowIcon } from "~/assets/icon";
+import Search from "~/components/search";
 
 const cx = classNames.bind(styles);
 
@@ -38,16 +39,7 @@ const Header = () => {
         </Button>
       </div>
       {/**Create search bar */}
-      <div className={cx("search")}>
-        <input
-          type="text"
-          className={cx("search-input")}
-          placeholder="Tìm kiếm"
-        />
-        <button className={cx("search-btn")}>
-          <GlassIcon />
-        </button>
-      </div>
+      <Search classNameIcon={cx("icon")} />
       {/**Navigation Bar */}
       <div className={cx("nav")}>
         {MENU_ITEMS.map((item) => (

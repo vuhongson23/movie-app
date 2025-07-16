@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  label {
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.wrapper-input {
+  display: flex;
+  align-items: center;
+  background-color: #2f2f2f;
+  margin-left: 5px;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+
+.input-cus {
+  width: 156px;
+  outline: none;
+  background-color: #2f2f2f;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 4px;
+  color: white;
+}

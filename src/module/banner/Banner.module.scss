@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 810px;
+
+  &--secondary {
+    height: 403px;
+    margin-top: 50px;
+  }
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  position: absolute;
+  left: 95px;
+  top: 228px;
+  width: 342px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  background-color: #3333336c;
+
+  &--secondary {
+    width: 266px;
+    left: 36px;
+    top: 25px;
+  }
+
+  .card-info-tag {
+    display: block;
+    color: #949191;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  .card-info-sum {
+    margin-bottom: 7px;
+  }
+
+  .card-info-desc {
+    display: -webkit-box; /* Sử dụng box layout */
+    font-weight: 400;
+    -webkit-box-orient: vertical; /* Thiết lập hướng là dọc */
+    -webkit-line-clamp: 6; /* Giới hạn 3 dòng */
+    overflow: hidden; /* Ẩn phần vượt quá */
+    text-overflow: ellipsis; /* Hiển thị dấu ... */
+  }
+
+  .card-info-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 17px;
+  }
+
+  & span {
+    color: #eebb07;
+    margin-left: 10px;
+    font-size: 19px;
+  }
+}
+
+.mySwiper {
+  &--secondary {
+    height: 403px;
+  }
+}
